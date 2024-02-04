@@ -25,7 +25,7 @@ export default function SitePointsComponent() {
             style={{
               paddingRight: "1rem",
               color: "var(--main-color)",
-              zIndex: 1,
+              zIndex: 2,
               transform: "translate(-3px,-2px)",
             }}
           >

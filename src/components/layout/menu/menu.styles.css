@@ -1,0 +1,42 @@
+.main-menu {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+}
+
+.menu-btn {
+    transform: scale(1);
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: var(--main-color);
+    height: fit-content;
+}
+
+.menu-btn:hover {
+    color: var(--main-half);
+    transition: color 250ms ease-in;
+    transform: scale(1.015);
+    text-shadow: 2px 1px 1px rgba(64, 94, 228, 1);
+}
+
+.menu-logo {
+    transform: scale(1);
+    transition: all 250ms ease-in-out;
+}
+
+.menu-logo:hover {
+    /*-webkit-animation: wobble-hor-bottom 0.8s ease-in-out;*/
+    /*animation: wobble-hor-bottom 0.8s ease-in-out;*/
+    /*text-shadow: 10px 1px 1px rgba(64, 94, 228, 1);*/
+}
+

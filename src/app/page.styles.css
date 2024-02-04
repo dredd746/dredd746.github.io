@@ -1,0 +1,163 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-banner {
+  height: 450px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 0.5px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms ease-in-out;
+}
+
+.main-banner:hover img {
+  transform: scale(1.005);
+}
+
+.main-banner:hover {
+  box-shadow:  0 0 40px -24px rgba(64, 94, 228, 1);
+  border: 0.5px solid var(--main-half);
+}
+
+.main-banner img {
+  width: 100%;
+  height: 450px;
+  transform: scale(1);
+  transition: transform 750ms ease-in-out;
+}
+
+.about-text-2 ,.about-text-1 {
+  font-size: 52px;
+  text-align: left;
+  letter-spacing: -3px;
+}
+
+.about-text-1 {
+  color: var(--main-color);
+}
+
+.about-text-2 {
+  color: var(--main-half);
+}
+
+.main-about {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  /*border-top: 0.25px solid var(--main-color);*/
+  /*padding-top: 1rem;*/
+}
+
+@-webkit-keyframes fade-in-25 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+@keyframes fade-in-25 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.about-stroke-preset {
+  color: transparent;
+  opacity: 0.25;
+  position: absolute;
+  -webkit-animation: fade-in-25 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-25 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.line-text {
+  width: 100%;
+  height: 20px;
+  background: var(--main-color);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.line-text p {
+  color: wheat;
+}
+
+.about-illustration {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.about-illustration p {
+  max-width:200px;
+  color: var(--main-color);
+  padding-right: 2rem;
+  font-size: 12px;
+}
+
+.about-illustration div {
+  border: 1px solid var(--main-color);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.under-logo-text {
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100% !important;
+  max-width: unset !important;
+  padding: 0 0.5rem 1rem 0.5rem !important;
+  color: var(--main-half) !important;
+}
+
+.site-points div h1 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 60px;
+}
+
+.site-points div {
+  display: flex;
+  align-items: center;
+}
+
+.site-points div h3 {
+  font-size: 36px;
+  line-height: 0.9;
+  color: var(--main-half)
+}
+
+.site-points {
+  margin-top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.start-anim-hover:hover {
+  animation-play-state: running;
+}
+
+.text-sh-soft {
+  text-shadow: 0px 0px 5px rgba(141, 157, 231, 1);
+}

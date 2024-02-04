@@ -1,95 +1,118 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import "./page.styles.css";
+import Banner from "@/../public/img/main banner.jpg";
+import FastForward from "@/../public/img/fast-forward.png";
+import AppleLaptop from "@/../public/img/apple-laptop-computer.png";
+import Logo from "@/../public/img/MAR_LOGO.png";
+import SitePointsComponent from "@/components/site-points.component";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+    <div className={"home-page"}>
+      <div className={"main-banner"}>
+        <Image src={Banner} alt={"main-banner"} priority />
+      </div>
+
+      {/*<div className={"line-text"}>*/}
+      {/*  <p>MacAppsRepository</p>*/}
+      {/*  <p>MacAppsRepository</p>*/}
+      {/*  <p>MacAppsRepository</p>*/}
+      {/*  <p>MacAppsRepository</p>*/}
+      {/*</div>*/}
+
+      <div className={"main-about"}>
+        <p
+          className={"about-text-1 fade-in-bottom"}
+          style={{
+            animationDelay: "1s",
+          }}
+        >
+          Welcome to our community
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <p
+          className={"about-text-1 about-stroke-preset"}
+          style={{
+            WebkitTextStroke: "1px var(--main-color)",
+            top: 0,
+          }}
+        >
+          Welcome to our community
+        </p>
+        <p
+          className={"about-text-2 fade-in-top"}
+          style={{
+            animationDelay: "1.2s",
+          }}
+        >
+          we’re connecting all apps site in one
+        </p>
+        <p
+          className={"about-text-2 about-stroke-preset"}
+          style={{
+            WebkitTextStroke: "1px var(--main-half)",
+            bottom: 0,
+          }}
+        >
+          we’re connecting all apps site in one
+        </p>
       </div>
 
-      <div className={styles.center}>
+      <div className={"about-illustration"}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={AppleLaptop}
+          alt={"macos user"}
+          width={187}
+          className={"fade-in-fwd"}
+          style={{
+            animationDelay: "3s",
+          }}
         />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <Image
+          src={FastForward}
+          alt={"forward"}
+          width={94}
+          className={"fade-in-left start-anim-hover"}
+          style={{
+            animationDelay: "3.5s",
+          }}
+        />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className={"fade-in-bck"}
+          style={{
+            animationDelay: "4s",
+          }}
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <Image src={Logo} alt={"logo"} width={200} />
+          <p className={"under-logo-text"}>
+            An universal tool to find any type of apps for macos
           </p>
-        </a>
+        </div>
+
+        <Image
+          src={FastForward}
+          alt={"forward"}
+          width={94}
+          className={"fade-in-left start-anim-hover"}
+          style={{
+            animationDelay: "4.5s",
+          }}
+        />
+
+        <p
+          className={"fade-in-fwd"}
+          style={{
+            animationDelay: "5s",
+          }}
+        >
+          www.MacAppPalace.com www.AppHavenMac.com www.MacAppMansion.com
+          www.MacAppVault.com www.AppEmporiumMac.com www.MacAppShack.com
+          www.AppNestMac.com www.MacAppShrine.com www.AppTreasureMac.com
+        </p>
       </div>
-    </main>
+
+      <SitePointsComponent />
+    </div>
   );
 }
